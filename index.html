@@ -18,17 +18,11 @@
             color: #333;
             overflow-x: hidden;
         }
-
-        /* Font Serif untuk kesan Klasik & Mewah */
         h1, h2, h3, .sidebar-title {
             font-family: 'Times New Roman', Times, serif; 
             letter-spacing: 0.5px;
         }
-
-        /* --- THE CHECKBOX HACK --- */
         #toggle-sidebar { display: none; }
-
-        /* --- HAMBURGER BUTTON --- */
         .hamburger {
             position: fixed; top: 25px; left: 25px; z-index: 999;
             cursor: pointer; width: 32px; height: 24px;
@@ -40,8 +34,6 @@
             background-color: #2d3436; border-radius: 4px;
             transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         }
-
-        /* --- SIDEBAR --- */
         .sidebar {
             position: fixed; top: 0; left: -100%; 
             width: 65%; max-width: 320px; height: 100vh;
@@ -51,52 +43,134 @@
             z-index: 888;
             box-shadow: 10px 0 30px rgba(0, 0, 0, 0.2);
         }
-
         .sidebar-title {
             position: absolute; top: 80px; left: 35px;
             font-size: 1.5rem; color: #f1f1f1; letter-spacing: 1px;
             border-bottom: 1px solid rgba(197, 160, 89, 0.3);
             padding-bottom: 10px; width: 70%;
         }
-
         .sidebar ul { list-style: none; margin-top: 150px; }
         .sidebar li {
             position: relative; padding: 18px 35px; cursor: pointer;
             font-size: 1rem; transition: all 0.3s ease;
             border-left: 3px solid transparent; 
         }
-        /* Style buat Tombol di Sidebar biar keliatan nyatu */
         .sidebar li button {
             background: none; border: none; color: inherit;
             font: inherit; cursor: pointer; text-align: left; width: 100%;
         }
-
         .sidebar li:hover {
             background-color: rgba(255, 255, 255, 0.05);
             color: #c5a059; border-left: 3px solid #c5a059; 
         }
-
-        /* --- MAIN CONTENT --- */
         .main-content {
-            margin-left: 0; padding: 25px; min-height: 100vh;
+            margin-left: 0; padding: 15px; min-height: 100vh;
             transition: margin-left 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-            display: flex; justify-content: center; padding-top: 80px; 
+            display: flex; justify-content: center; padding-top: 70px; 
         }
 
         .paper {
-            background-color: #f6f8fa;  width: 100%; max-width: 850px;
-            min-height: 85vh; padding: 40px; padding-top: 40px;
+            background-color: #ffffff;  width: 100%; max-width: 850px;
+            min-height: 85vh; padding: 25px; padding-top: 15px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05), 0 20px 40px rgba(0,0,0,0.05);
             border-radius: 10px; line-height: 1.8; color: #24292e;
         }
 
         .paper h1, .paper h2, .paper h3 { color: #1a1c20; margin-top: 0.2em; margin-bottom: 0.5em; }
         .paper blockquote {
-            border-left: 4px solid #c5a059; padding-left: 15px; margin: 20px 0;
-            font-style: italic; color: #555; background: #fdfdfd;
+            border-left: 4px solid #b9d4ee; padding-left: 15px; margin: 20px 0;
+            font-style: italic; color: #555; background: #f5f5f5;
         }
         .paper strong { color: #000; }
-        .paper ul { padding-left: 20px; margin-bottom: 1em; }
+        .paper ul { padding-left: 20px; margin-bottom: 1em; list-style-type: none;}
+        .paper table {
+            width: 100%;
+            border-collapse: collapse; 
+            margin: 25px 0;
+            font-size: 0.95rem;
+            color: #24292e;
+            box-shadow: none;
+            border-radius: 0;
+            border: none;
+        }
+        .paper thead tr {
+            background-color: transparent; 
+            color: #000; /* Teks Hitam Pekat */
+            text-align: left;
+            font-weight: 800; /* Lebih tebal */
+            text-transform: uppercase; 
+            border-bottom: 2px solid #000;
+        }
+
+        .paper th, .paper td {
+            padding: 12px 10px; /* Spasi secukupnya */
+            border: none; 
+        }
+        .paper tbody tr {
+            background-color: #fff;
+            border-bottom: 1px solid #d1d4d8;
+        }
+        .paper tbody tr:nth-of-type(even) {
+            background-color: transparent;
+        }
+        .paper tbody tr:last-of-type {
+            border-bottom: 1px solid #e1e4e8; /* Tutup biasa */
+        }
+        .paper tbody tr:hover {
+            background-color: transparent;
+            color: inherit;
+        }
+        .paper :not(pre) > code {
+            font-family: 'Consolas', 'Monaco', monospace;
+            background-color: #dfdede; 
+            color: #a82e2e; 
+            
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        pre {
+            background: #f6f8fa;     
+            color: #24292e; 
+            padding: 16px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-family: 'Consolas', 'Monaco', monospace;
+            line-height: 1.5;
+            border: 1px solid #d0d7de;    
+            border-left: 5px solid #b9d4ee; 
+        }
+        .diff-green {
+            background-color: #e6ffec; 
+            color: #22863a; 
+            display: block;
+            width: 100%; 
+            padding: 0 4px; 
+        }
+        .diff-red {
+            background-color: #ffebe9; 
+            color: #cf222e; 
+            display: block;
+            width: 100%;
+            padding: 0 4px;
+        }
+
+        .diff-orange {
+            background-color: #fff5b1; 
+            color: #b08800; 
+            display: block;
+            font-weight: bold;
+            width: 100%;
+            padding: 0 4px;
+        }
+        .diff-grey {
+            color: #6a737d; 
+            display: block;
+            width: 100%;
+            font-style: italic;
+            padding: 0 4px;
+        }
 
         @media (min-width: 900px) {
             .sidebar { width: 320px; left: -320px; }
@@ -133,13 +207,8 @@
     <aside class="sidebar">
         <div class="sidebar-title">MY DRAFT.</div>
         <ul>
-            <!-- Tombol Panggil File -->
-            <li><button onclick="bukaFile('tai.md')">✦ Filosofi Telur</button></li>
-            <li><button onclick="bukaFile('abstrak.md')">✦ Matematika Realita</button></li>
-            <li><button onclick="bukaFile('mantra.md')">✦ Mantra Sihir</button></li>
-            <li><button onclick="bukaFile('validasi.md')">✦ Pem-validasi-an</button></li>
-            <li><button onclick="bukaFile('toma.md')">✦ Izalah Ath-thoma'</button></li>
-            <li><button onclick="bukaFile('validasi.md')">✦ Persaingan Setara</button></li>
+            <li><button onclick="bukaFile('matematika.md')">✦ Matematika Realita</button></li>
+            <li><button onclick="bukaFile('sihir.md')">✦ Filosofi Telur</button></li>
         </ul>
     </aside>
 
@@ -155,31 +224,54 @@
     <!-- JAVASCRIPT SAKTI -->
     <script>
         async function bukaFile(namaFile) {
-            const layar = document.getElementById('layar-kertas');
-            
-            try {
-                // Jemput file .md
-                const respon = await fetch(namaFile);
-                
-                if (!respon.ok) throw new Error("File tidak ditemukan!");
+    const layar = document.getElementById('layar-kertas');
+    
+    try {
+        const respon = await fetch(namaFile);
+        if (!respon.ok) throw new Error("File tidak ditemukan!");
 
-                //  teks biasa
-                const teksMentah = await respon.text();
+        const teksMentah = await respon.text();
+        const hasilHTML = marked.parse(teksMentah);
+        
+        layar.innerHTML = hasilHTML;
 
-                // 'Marked.js' terjemahin ke HTML
-                const hasilHTML = marked.parse(teksMentah);
+        // --- TAMBAHAN BARU: LOGIKA PEWARNAAN DIFF ---
+        // 1. Cari semua blok kode di dalam kertas
+        const semuaKode = layar.querySelectorAll('code.language-diff');
 
-                layar.innerHTML = hasilHTML;
+        semuaKode.forEach(blok => {
+            // Ambil isinya, pecah per baris
+            const baris = blok.innerText.split('\n');
+            let htmlBaru = '';
 
-                // Tutup sidebar otomatis (kalo di HP) biar enak
-                if (window.innerWidth < 900) {
-                    document.getElementById('toggle-sidebar').checked = false;
+            baris.forEach(b => {
+                // Cek karakter pertama
+                if (b.startsWith('+')) {
+                    htmlBaru += `<span class="diff-green">${b}</span>`;
+                } else if (b.startsWith('-')) {
+                    htmlBaru += `<span class="diff-red">${b}</span>`;
+                } else if (b.startsWith('!')) {
+                    htmlBaru += `<span class="diff-orange">${b}</span>`;
+                } else if (b.startsWith('#') || b.startsWith('//')) { 
+                    htmlBaru += `<span class="diff-grey">${b}</span>`;
+                } else {
+                    htmlBaru += `<span>${b}</span>\n`; // Baris biasa
                 }
+            });
 
-            } catch (error) {
-                layar.innerHTML = `<h3>Gagal Memuat 😭</h3><p>Pastikan kamu membuka ini pakai <strong>Live Server</strong>, bukan double click file.</p><p>Error: ${error.message}</p>`;
-            }
+            // Timpa kode lama dengan kode yang udah diwarnain
+            blok.innerHTML = htmlBaru;
+        });
+        // ---------------------------------------------
+
+        if (window.innerWidth < 900) {
+            document.getElementById('toggle-sidebar').checked = false;
         }
+
+    } catch (error) {
+        layar.innerHTML = `<h3>Gagal Memuat 😭</h3><p>Error: ${error.message}</p>`;
+    }
+}
     </script>
 
 </body>
