@@ -130,6 +130,11 @@
             font-size: 0.9em;
             font-weight: 500;
         }
+        .paper pre code {
+            display: block;         
+            min-width: 100%;         
+            width: fit-content;      
+        }
         pre {
             background: #f6f8fa;     
             color: #24292e; 
@@ -142,9 +147,8 @@
             border-left: 5px solid #b9d4ee; 
         }
         .diff-green, .diff-red, .diff-orange, .diff-grey {
-            display: block;
-            width: fit-content;   
-            min-width: 100%;      
+            display: block;   
+            width: 100%;      
             padding: 2px 8px;     
             box-sizing: border-box; 
         }

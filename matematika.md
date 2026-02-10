@@ -33,10 +33,10 @@ Karena di tengah-tengahnya ada **Variabel [X]** yang tak terlihat:
 Tapi yang jelas, perbuatan baik kita akan tetap jadi baik meskipun tidak menghasilkan *feedback* kebaikan dari orang lain. ✨
 
 ```diff
-- Red Flag 🚩
+- Red Flag 🚩                                             
 - Kebaikan = Mata Uang (Untuk membeli kebaikan orang lain)
 
-+ Green Flag (my)🗿
++ Green Flag (my)🗿                                            
 + Kebaikan = XP / Experience Points (Untuk menaikkan level diri)
 ```
 Kebaikan adalah **Perolehan medali** kita sendiri, yang tidak ada ruginya jika hanya kita yang mendapatkannya. 📈🎗️
