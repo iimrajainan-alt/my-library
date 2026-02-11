@@ -5,7 +5,7 @@
 
 ### 🆚 PERBANDINGAN LOGIKA
 Di matematika, tentu kita akan menemukan keteraturan: **Jika A maka B.** <br>
-Tapi realitanya, jika kita berbuat baik, apakah orang juga akan berbuat baik kepada kita? **Tentu tidak pasti.** <br>
+Tapi realitanya, jika kita berbuat baik, apakah orang juga akan berbuat baik kepada kita?<br> **Tentu tidak pasti.** <br>
 Ada perbedaan fatal antara logika buku dan logika jalanan:
 
 | FITUR | 📐 MATEMATIKA | 🌪️ REALITA (HIDUP) |
